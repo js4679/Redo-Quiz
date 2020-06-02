@@ -29,11 +29,64 @@
             grid-template-areas: ". section-2-content . ";
             grid-template-columns: 15px auto 15px;
             padding: 44px 0 96px;
+
             @include md{
                 grid-area: section-2-left;
                 grid-template-columns: auto 80% auto;
+                padding: 20px 0;
             }
 
+            @include lg{
+                grid-area: section-2-left;
+                grid-template-columns: auto 70% auto;
+                padding: 130px 0 145px;
+            }
+
+            >div{
+                grid-area: section-2-content;
+
+                h3{
+                    font-size: rem-calc(35);
+                    margin-bottom: 10px;
+                    text-align: center;
+
+                    @include md{
+                        text-align: left;
+                    }
+
+                    @include lg{
+                        font-size: rem_calc(45);
+                    }
+                }
+                p{
+                    line-height: rem-calc(21);
+                    text-align: justify;
+
+                    @include md{
+                        font-size: rem-calc(17);
+                        line-height: rem-calc(23);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(20);
+                        line-height: rem-calc(29);
+                    }
+
+                }
+            }
+
+        }
+
+        aside{
+            background-image: url('../img/section-2_shoes.jpg');
+            height: 320px;
+            background-size: cover;
+            background-position: center;
+
+            @include md{
+                grid-area: section-2-right;
+                height: 100%;
+            }
         }
     }
 }

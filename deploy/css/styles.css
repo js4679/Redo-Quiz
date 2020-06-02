@@ -361,6 +361,12 @@ h1 {
 h2 {
   font-family: 'Comfortaa', cursive; }
 
+h3 {
+  font-family: 'Montserrat', sans-serif; }
+
+p {
+  font-family: 'Lato', sans-serif; }
+
 h5 {
   font-family: 'Comfortaa', cursive; }
 
@@ -518,7 +524,45 @@ textarea {
     @media (min-width: 768px) {
       #section-2 > div section {
         grid-area: section-2-left;
-        grid-template-columns: auto 80% auto; } }
+        grid-template-columns: auto 80% auto;
+        padding: 20px 0; } }
+    @media (min-width: 992px) {
+      #section-2 > div section {
+        grid-area: section-2-left;
+        grid-template-columns: auto 70% auto;
+        padding: 130px 0 145px; } }
+    #section-2 > div section > div {
+      grid-area: section-2-content; }
+      #section-2 > div section > div h3 {
+        font-size: 2.1875rem;
+        margin-bottom: 10px;
+        text-align: center; }
+        @media (min-width: 768px) {
+          #section-2 > div section > div h3 {
+            text-align: left; } }
+        @media (min-width: 992px) {
+          #section-2 > div section > div h3 {
+            font-size: 2.8125rem; } }
+      #section-2 > div section > div p {
+        line-height: 1.3125rem;
+        text-align: justify; }
+        @media (min-width: 768px) {
+          #section-2 > div section > div p {
+            font-size: 1.0625rem;
+            line-height: 1.4375rem; } }
+        @media (min-width: 992px) {
+          #section-2 > div section > div p {
+            font-size: 1.25rem;
+            line-height: 1.8125rem; } }
+  #section-2 > div aside {
+    background-image: url("../img/section-2_shoes.jpg");
+    height: 320px;
+    background-size: cover;
+    background-position: center; }
+    @media (min-width: 768px) {
+      #section-2 > div aside {
+        grid-area: section-2-right;
+        height: 100%; } }
 /* =============
     Section 3
 ============= */

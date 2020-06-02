@@ -9,14 +9,6 @@
 	],
 "creatorBuild": "32001",
 "files": {
-	"/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/.gitignore",
-		"oF": 0
-		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -26,6 +18,71 @@
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/deploy/img/section-1_hero.jpg": {
+		"ft": 16384,
+		"iS": 1351642,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1_hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-1_startbutton.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/section-1_startbutton.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/section-2_shoes.jpg": {
+		"ft": 16384,
+		"iS": 265467,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2_shoes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3_cardstack.jpg": {
+		"ft": 16384,
+		"iS": 89279,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3_cardstack.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3_sign.jpg": {
+		"ft": 16384,
+		"iS": 102734,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3_sign.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3_singlecards.jpg": {
+		"ft": 16384,
+		"iS": 110271,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3_singlecards.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/deploy/index.html": {
 		"cB": 1,
@@ -45,6 +102,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/design/content-quiz.sketch": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/content-quiz.sketch",
+		"oF": 0
 		},
 	"/dev/index.kit": {
 		"cB": 1,
@@ -234,19 +299,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/_section-4.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-4.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -282,14 +334,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-3.html",
-		"oF": 0
-		},
-	"/dev/section-4.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-4.html",
 		"oF": 0
 		},
 	"/README.md": {

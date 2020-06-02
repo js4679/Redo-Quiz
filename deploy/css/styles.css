@@ -373,6 +373,9 @@ p {
 h5 {
   font-family: 'Comfortaa', cursive; }
 
+h7 {
+  font-family: 'Comfortaa', cursive; }
+
 /* =============
     Buttons
 ============= */
@@ -400,6 +403,41 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #000;
+  padding: 43px 0 46px; }
+  @media (min-width: 1200px) {
+    footer {
+      display: grid;
+      grid-template-areas: ". footer .";
+      grid-template-columns: auto 1200px auto; } }
+  @media (min-width: 1200px) {
+    footer > div {
+      grid-area: footer; } }
+  footer > div ul {
+    display: flex;
+    justify-content: center; }
+    @media (min-width: 992px) {
+      footer > div ul {
+        justify-content: flex-start; } }
+    footer > div ul li {
+      margin: 0 10px; }
+      footer > div ul li a:link,
+      footer > div ul li a:visited {
+        color: #EEEEEE; }
+      footer > div ul li a:hover,
+      footer > div ul li a:active {
+        color: #338595; }
+  footer > div aside {
+    margin-top: 20px;
+    text-align: center; }
+    @media (min-width: 992px) {
+      footer > div aside {
+        text-align: right;
+        margin-top: 0px; } }
+    footer > div aside h7 {
+      color: #fff; }
+
 /* =============
     Section 1
 ============= */

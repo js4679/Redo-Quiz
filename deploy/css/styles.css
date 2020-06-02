@@ -364,6 +364,9 @@ h2 {
 h3 {
   font-family: 'Montserrat', sans-serif; }
 
+h4 {
+  font-family: 'Montserrat', sans-serif; }
+
 p {
   font-family: 'Lato', sans-serif; }
 
@@ -566,3 +569,70 @@ textarea {
 /* =============
     Section 3
 ============= */
+#section-3 {
+  display: grid;
+  grid-template-areas: ". section-3 .";
+  grid-template-columns: 15px auto 15px;
+  padding: 44px 0 32px; }
+  @media (min-width: 768px) {
+    #section-3 {
+      grid-template-columns: auto 80% auto;
+      padding: 32px 0 40px; } }
+  @media (min-width: 992px) {
+    #section-3 {
+      padding: 70px 0; } }
+  @media (min-width: 1200px) {
+    #section-3 {
+      grid-template-columns: auto 1200px auto;
+      padding: 100px 0 80px; } }
+  #section-3 > div {
+    grid-area: section-3; }
+    #section-3 > div #section-3-title {
+      margin-bottom: 10px; }
+      #section-3 > div #section-3-title h3 {
+        text-align: center;
+        font-size: 2.1875rem; }
+    #section-3 > div #gallery ul {
+      display: grid;
+      gap: 21px; }
+      @media (min-width: 768px) {
+        #section-3 > div #gallery ul {
+          display: grid;
+          grid-template-areas: "card-1 card-1 card-2 card-2" ". card-3 card-3 ."; } }
+      @media (min-width: 992px) {
+        #section-3 > div #gallery ul {
+          grid-template-areas: "card-1 card-2 card-3 .";
+          grid-template-columns: repeat(3, 1fr); } }
+      #section-3 > div #gallery ul li {
+        background-color: #EEEEEE; }
+        #section-3 > div #gallery ul li div {
+          height: 200px;
+          background-size: cover;
+          background-position: center; }
+        #section-3 > div #gallery ul li section {
+          padding: 20px; }
+          #section-3 > div #gallery ul li section h4 {
+            text-align: center;
+            font-size: 1.5rem; }
+          #section-3 > div #gallery ul li section p {
+            font-size: rem-cal(16);
+            line-height: 1.25rem;
+            margin: 20px 0; }
+          #section-3 > div #gallery ul li section h6 {
+            font-size: 0.875rem;
+            line-height: rem-calc 20; }
+      @media (min-width: 768px) {
+        #section-3 > div #gallery ul #card-1 {
+          grid-area: card-1; } }
+      #section-3 > div #gallery ul #card-1 div {
+        background-image: url("../img/section-3_sign.jpg"); }
+      @media (min-width: 768px) {
+        #section-3 > div #gallery ul #card-2 {
+          grid-area: card-2; } }
+      #section-3 > div #gallery ul #card-2 div {
+        background-image: url("../img/section-3_singlecards.jpg"); }
+      @media (min-width: 768px) {
+        #section-3 > div #gallery ul #card-3 {
+          grid-area: card-3; } }
+      #section-3 > div #gallery ul #card-3 div {
+        background-image: url("../img/section-3_cardstack.jpg"); }

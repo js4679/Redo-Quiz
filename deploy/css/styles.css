@@ -343,6 +343,8 @@ ul {
     Typography
 ============= */
 body {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Lato', sans-serif;
   font-family: 'Montserrat', sans-serif; }
 
 h1, h2, h3, h4 {
@@ -353,8 +355,14 @@ p {
   margin: 0;
   padding: 0; }
 
-.section-title {
-  font-weight: 300; }
+h1 {
+  font-family: 'Comfortaa', cursive; }
+
+h2 {
+  font-family: 'Comfortaa', cursive; }
+
+h5 {
+  font-family: 'Comfortaa', cursive; }
 
 /* =============
     Buttons
@@ -387,14 +395,130 @@ textarea {
     Section 1
 ============= */
 #section-1 {
-  background-image: url("../img/section-1-hero.jpg");
+  background-image: url("../img/section-1_hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 559px; }
+  padding: 80px 0 180px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    #section-1 {
+      display: grid;
+      grid-template-areas: ". section-1 .";
+      grid-template-columns: auto 60% auto;
+      padding: 120px 0 150px; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      grid-template-columns: auto 70% auto;
+      padding: 130px 0 170px; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      grid-template-columns: auto 85% auto;
+      padding: 165px 0 200px; } }
+  @media (min-width: 768px) {
+    #section-1 > div {
+      grid-area: section-1; } }
+  #section-1 > div h1 {
+    color: #1A4B58;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 10px; }
+    #section-1 > div h1 include md {
+      font-size: 2.375rem;
+      margin-bottom: 15px; }
+    @media (min-width: 992px) {
+      #section-1 > div h1 {
+        font-size: 3.75rem;
+        margin-bottom: 15px; } }
+    @media (min-width: 1200px) {
+      #section-1 > div h1 {
+        font-size: 4.375rem;
+        margin-bottom: 20px; } }
+  #section-1 > div h2 {
+    color: #338595;
+    font-size: 1rem;
+    line-height: 1.125rem; }
+    @media (min-width: 768px) {
+      #section-1 > div h2 {
+        font-size: 1.4375rem;
+        line-height: 1.8125rem; } }
+    @media (min-width: 992px) {
+      #section-1 > div h2 {
+        font-size: 2rem;
+        line-height: 2.125rem; } }
+  #section-1 > div a:link,
+  #section-1 > div a:visited {
+    text-decoration: none;
+    align-items: center;
+    border: 2.8px solid #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin: 163px auto 0;
+    width: 80px;
+    color: #fff; }
+    @media (min-width: 768px) {
+      #section-1 > div a:link,
+      #section-1 > div a:visited {
+        width: 120px;
+        height: 120px; } }
+    @media (min-width: 992px) {
+      #section-1 > div a:link,
+      #section-1 > div a:visited {
+        width: 170px;
+        height: 170px;
+        border-radius: 170px;
+        border: 5.6px solid #fff; } }
+    #section-1 > div a:link h5,
+    #section-1 > div a:visited h5 {
+      font-size: 1.1375rem;
+      font-weight: 700; }
+      @media (min-width: 768px) {
+        #section-1 > div a:link h5,
+        #section-1 > div a:visited h5 {
+          font-size: remcalc(23); } }
+      @media (min-width: 992px) {
+        #section-1 > div a:link h5,
+        #section-1 > div a:visited h5 {
+          font-size: 2rem; } }
+  #section-1 > div a:hover,
+  #section-1 > div a:active {
+    background-color: #fff; }
+    #section-1 > div a:hover h5,
+    #section-1 > div a:active h5 {
+      color: #338595; }
 
 /* =============
     Section 2
 ============= */
+#section-2 {
+  background-color: #EEEEEE; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-areas: ". section-2 .";
+      grid-template-columns: auto 1200px auto; } }
+  @media (min-width: 768px) {
+    #section-2 > div {
+      display: grid;
+      grid-template-areas: "section-2-left section-2-right";
+      grid-template-columns: 70% auto; } }
+  @media (min-width: 992px) {
+    #section-2 > div {
+      grid-template-areas: "section-2-right section-2-left";
+      grid-template-columns: 50% auto; } }
+  @media (min-width: 1200px) {
+    #section-2 > div {
+      grid-area: section-2; } }
+  #section-2 > div section {
+    display: grid;
+    grid-template-areas: ". section-2-content . ";
+    grid-template-columns: 15px auto 15px;
+    padding: 44px 0 96px; }
+    @media (min-width: 768px) {
+      #section-2 > div section {
+        grid-area: section-2-left;
+        grid-template-columns: auto 80% auto; } }
 /* =============
     Section 3
 ============= */

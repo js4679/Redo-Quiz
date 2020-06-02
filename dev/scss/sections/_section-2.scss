@@ -2,8 +2,38 @@
     Section 2
 ============= */
 #section-2{
-    .grid-content{
-        
+   background-color: $lightgray;
+   @include xl{
+       display: grid;
+       grid-template-areas: ". section-2 .";
+       grid-template-columns: auto 1200px auto;
     }
+    >div{
+        @include md{
+            display: grid;
+            grid-template-areas: "section-2-left section-2-right";
+            grid-template-columns: 70% auto;
+        }
 
+        @include lg{
+            grid-template-areas: "section-2-right section-2-left";
+            grid-template-columns: 50% auto;
+        }
+
+        @include xl{
+            grid-area: section-2;
+        }
+
+        section{
+            display: grid; 
+            grid-template-areas: ". section-2-content . ";
+            grid-template-columns: 15px auto 15px;
+            padding: 44px 0 96px;
+            @include md{
+                grid-area: section-2-left;
+                grid-template-columns: auto 80% auto;
+            }
+
+        }
+    }
 }

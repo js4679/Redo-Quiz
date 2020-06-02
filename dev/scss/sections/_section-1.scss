@@ -2,8 +2,119 @@
     Section 1
 ============= */
 #section-1{
-    background-image: url('../img/section-1-hero.jpg');
+    background-image: url('../img/section-1_hero.jpg');
     background-position: center;
     background-size: cover;
-    height: 559px;
+    padding: 80px 0 180px;
+    text-align: center;
+
+    @include md{
+        display: grid;
+        grid-template-areas: ". section-1 .";
+        grid-template-columns: auto 60% auto;
+        padding: 120px 0 150px;
+    }
+
+    @include lg{
+        grid-template-columns: auto 70% auto;
+        padding: 130px 0 170px;
+    }
+
+    @include xl{
+        grid-template-columns: auto 85% auto;
+        padding: 165px 0 200px;
+    }
+
+    >div{
+        @include md {
+            grid-area: section-1;
+        }
+
+        h1{
+            color: $darkblue;
+            font-size: rem-calc(24);
+            font-weight: 800;
+            margin-bottom: 10px;
+
+            include md{
+                font-size: rem-calc(38);
+                margin-bottom: 15px;
+            }
+
+            @include lg{
+                font-size: rem-calc(60);
+                margin-bottom: 15px;
+            }
+
+            @include xl{
+                font-size: rem-calc(70);
+                margin-bottom: 20px;
+            }
+        }
+
+        h2{
+            color: $lightblue;
+            font-size: rem-calc(16);
+            line-height: rem-calc(18);
+
+            @include md{
+                font-size: rem-calc(23);
+                line-height: rem-calc(29);
+            }
+
+            @include lg{
+                font-size: rem-calc(32);
+                line-height: rem-calc(34);
+            }
+        }
+
+        a:link,
+        a:visited{
+            text-decoration: none;
+            align-items: center;
+            border: 2.8px solid $white;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            height: 80px;
+            margin: 163px auto 0;
+            width: 80px;
+            color: $white;
+
+            @include md{
+                width: 120px;
+                height: 120px;
+            }
+
+            @include lg{
+                width: 170px;
+                height: 170px;
+                border-radius: 170px;
+                border: 5.6px solid $white;
+            }
+
+            h5{
+                font-size: rem-calc(18.2);
+                font-weight: 700;
+
+                @include md{
+                    font-size: remcalc(23);
+                }
+
+                @include lg{
+                    font-size: rem-calc(32);
+                }
+            }
+        }
+
+        a:hover,
+        a:active{
+            background-color: $white;
+
+            h5{
+                color: $lightblue;
+            }
+
+        }
+    }
 }
